@@ -7,16 +7,16 @@ function cek($url){
     sleep(1);
     $cek = file_get_contents($URL_API."?url=$url");
     if(preg_match("/yes/", $cek)){
-        $text = "Silahkan Dibuy Lurrr!!! || ".$url;
+        $text = "Silahkan Dibuy Kanggg!!! || ".$url;
         $res = file_get_contents("https://api.telegram.org/bot$BOT_TOKEN/sendMessage?chat_id=$CHAT_ID&text=$text");
-        return "$url || Available || ";
+        return "$url || Tersedia || ";
     }else{
-        return "$url || No ";
+        return "$url || Tidak ";
     }
 }
 
 while(true){
-    $list = explode("\n", "https://sepatucompass.com/collections/all/products/gazelle-hi-cappuccino
+    $list = explode("\n", "https://sepatucompass.com/collections/all/products/gazelle-hi-cappuccino-new
 https://sepatucompass.com/collections/all/products/gazelle-hi-red
 https://sepatucompass.com/collections/all/products/gazelle-hi-white
 https://sepatucompass.com/collections/all/products/gazelle-hi-blue-sky
